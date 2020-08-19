@@ -88,7 +88,7 @@ To send alert to user, alertmanager must be setup.
       - targets:
         - 127.0.0.1:9104
         labels:
-      instance: alarm-manager
+          instance: alarm-manager
     .. skip ..
 
 ## alertmanager config.ini
