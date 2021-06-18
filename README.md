@@ -40,19 +40,6 @@
     promtool = /usr/bin/promtool
 
 ## Build & Run
-
-    ## package
-    go get github.com/gin-gonic/gin
-    go get github.com/Unknwon/goconfig
-    go get github.com/go-easylog/el
-    go get github.com/prometheus/client_golang/prometheus
-    go get github.com/prometheus/client_golang/prometheus/promhttp
-    go get github.com/prometheus/common/version
-    go get github.com/go-sql-driver/mysql
-    go get github.com/go-xorm/core
-    go get github.com/go-xorm/xorm
-    go get golang.org/x/sync/errgroup
-
     ## build and run
     cd pmm-ruled
     go build .
