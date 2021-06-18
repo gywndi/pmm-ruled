@@ -196,7 +196,7 @@ func (o *AlertInstance) GetInstanceExt() AlertInstanceExt {
 	var r AlertInstanceExt
 	if o.Exist() {
 		var rows []AlertInstanceExt
-		orm.Sql(`
+		orm.SQL(`
 			select alert_instance.*, ifnull(alert_group.name, '') group_name
 			from alert_instance
 			left join alert_group on alert_group.id = alert_instance.group_id
@@ -210,7 +210,7 @@ func (o *AlertInstance) GetInstanceExt() AlertInstanceExt {
 // GetInstanceExtList get instance list with group name
 func (o *AlertInstance) GetInstanceExtList() []AlertInstanceExt {
 	var r []AlertInstanceExt
-	orm.Sql(`
+	orm.SQL(`
 		select alert_instance.*, ifnull(alert_group.name, '') group_name
 		from alert_instance
 		left join alert_group on alert_group.id = alert_instance.group_id

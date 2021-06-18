@@ -18,8 +18,8 @@ package model
 
 import (
 	_ "github.com/go-sql-driver/mysql" // for xorm
-	"github.com/go-xorm/core"
-	"github.com/go-xorm/xorm"
+	"xorm.io/core"
+	"xorm.io/xorm"
 
 	"pmm-ruled/common"
 	"time"

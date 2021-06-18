@@ -282,7 +282,7 @@ func (o *AlertRule) rewriteCols() {
 // GetAlertThresoldList get alert thresold list
 func (o *AlertRule) GetAlertThresoldList() []AlertThreshold {
 	var rules []AlertThreshold
-	orm.Sql(`
+	orm.SQL(`
 		select straight_join
 			alert_group.id           as group_id
 			,alert_group.name        as group_name
@@ -312,7 +312,7 @@ func (o *AlertRule) GetAlertThresoldList() []AlertThreshold {
 		inner join alert_rule      on alert_rule.id = t.rule_id
 		inner join alert_instance      on alert_instance.id = t.instance_id
 		inner join alert_group      on alert_group.id = alert_instance.group_id
-		inner join alert_group_rule on alert_group_rule.group_id = alert_group.id and alert_group_rule.rule_id = alert_rule.id
+		left join alert_group_rule on alert_group_rule.group_id = alert_group.id and alert_group_rule.rule_id = alert_rule.id
 		left join alert_instance_rule      e on e.instance_id = alert_instance.id and e.rule_id = alert_rule.id
 		left join alert_instance_skip_rule f on f.instance_id = alert_instance.id and f.rule_id = alert_rule.id
 	`).Find(&rules)

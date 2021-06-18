@@ -113,7 +113,7 @@ func StartExporter() error {
 
 	// Rule Thresholds
 	metricPathRule := "/metric-rule"
-	http.HandleFunc(metricPathRule, prometheus.InstrumentHandlerFunc(metricPathRule, func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc(metricPathRule, func(w http.ResponseWriter, r *http.Request) {
 
 		registry := prometheus.NewRegistry()
 		registry.MustRegister(&RuleExporter{
@@ -146,7 +146,7 @@ func StartExporter() error {
 		h := promhttp.HandlerFor(gatherers, promhttp.HandlerOpts{})
 		h.ServeHTTP(w, r)
 
-	}))
+	})
 
 	common.Log.Info("Start exporter, listening", common.ConfigStr["glob.exp_listen_port"])
 	return http.ListenAndServe(common.ConfigStr["glob.exp_listen_port"], nil)
