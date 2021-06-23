@@ -170,10 +170,10 @@ func (o *AlertGroupRule) InsertCheck() error {
 func (o *AlertGroupRule) UpdateCheck() error {
 	var err error
 
-	// check exists and get first row
-	if _, err := o.GetFirst(); err != nil {
-		return fmt.Errorf(common.MSG["err.rule_not_exists"])
-	}
+	// // check exists and get first row
+	// if _, err := o.GetFirst(); err != nil {
+	// 	return fmt.Errorf(common.MSG["err.rule_not_exists"])
+	// }
 
 	if o.Val == nil {
 		return fmt.Errorf(common.MSG["err.val_empty"])
