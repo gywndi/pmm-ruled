@@ -1,5 +1,4 @@
 # github.com/Unknwon/goconfig v0.0.0-20200908083735-df7de6a44db8
-## explicit
 github.com/Unknwon/goconfig
 # github.com/beorn7/perks v1.0.1
 github.com/beorn7/perks/quantile
@@ -8,14 +7,12 @@ github.com/cespare/xxhash/v2
 # github.com/gin-contrib/sse v0.1.0
 github.com/gin-contrib/sse
 # github.com/gin-gonic/gin v1.7.2
-## explicit
 github.com/gin-gonic/gin
 github.com/gin-gonic/gin/binding
 github.com/gin-gonic/gin/internal/bytesconv
 github.com/gin-gonic/gin/internal/json
 github.com/gin-gonic/gin/render
 # github.com/go-easylog/el v0.0.0-20170203194048-5b2d5e99c9a1
-## explicit
 github.com/go-easylog/el
 # github.com/go-playground/locales v0.13.0
 github.com/go-playground/locales
@@ -25,7 +22,6 @@ github.com/go-playground/universal-translator
 # github.com/go-playground/validator/v10 v10.4.1
 github.com/go-playground/validator/v10
 # github.com/go-sql-driver/mysql v1.6.0
-## explicit
 github.com/go-sql-driver/mysql
 # github.com/golang/protobuf v1.4.3
 github.com/golang/protobuf/proto
@@ -48,14 +44,12 @@ github.com/modern-go/concurrent
 # github.com/modern-go/reflect2 v1.0.1
 github.com/modern-go/reflect2
 # github.com/prometheus/client_golang v1.11.0
-## explicit
 github.com/prometheus/client_golang/prometheus
 github.com/prometheus/client_golang/prometheus/internal
 github.com/prometheus/client_golang/prometheus/promhttp
 # github.com/prometheus/client_model v0.2.0
 github.com/prometheus/client_model/go
 # github.com/prometheus/common v0.29.0
-## explicit
 github.com/prometheus/common/expfmt
 github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg
 github.com/prometheus/common/model
@@ -82,7 +76,6 @@ github.com/ugorji/go/codec
 # golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
 golang.org/x/crypto/sha3
 # golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
-## explicit
 golang.org/x/sync/errgroup
 # golang.org/x/sys v0.0.0-20210603081109-ebe580a85c40
 golang.org/x/sys/cpu
@@ -123,10 +116,8 @@ gopkg.in/yaml.v2
 # xorm.io/builder v0.3.8
 xorm.io/builder
 # xorm.io/core v0.7.3
-## explicit
 xorm.io/core
 # xorm.io/xorm v1.1.0
-## explicit
 xorm.io/xorm
 xorm.io/xorm/caches
 xorm.io/xorm/contexts
