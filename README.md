@@ -224,14 +224,9 @@ Action  |Method  |API
 NEW     |POST    |http://127.0.0.1:3333/pmm-rule/api/v1/alert/skip_rule/{{instance_id}}/{{rule_id}}
 REMOVE  |DELETE  |http://127.0.0.1:3333/pmm-rule/api/v1/alert/skip_rule/{{instance_id}}/{{rule_id}}
 
-#### Parameters
-parameter   |Decryption
-------------|-----------------------------------------------
-val         | "instance" alert thresholds
-
 #### example
-    curl -s -X POST http://127.0.0.1:3333/pmm-rule/api/v1/alert/instance_rule/1/1
-    curl -s -X POST -d 'val=5' http://127.0.0.1:3333/pmm-rule/api/v1/alert/instance_rule/1/1
+    curl -s -X POST http://127.0.0.1:3333/pmm-rule/api/v1/alert/skip_rule/1/1
+    curl -s -X DELETE http://127.0.0.1:3333/pmm-rule/api/v1/alert/skip_rule/1/1
 
 ### 7. Alert rule flush
 Alert rule flushed to "rule_path" in config.ini
